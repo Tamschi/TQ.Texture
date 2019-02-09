@@ -4,8 +4,8 @@ namespace TQ.Texture
 {
     public readonly ref struct Frame
     {
-        readonly Span<byte> _data;
+        public Span<byte> Data { get; }
 
-        public Frame(Span<byte> data) => _data = data;
+        public Frame(Span<byte> data) => Data = data;
     }
 }
